@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Gluten:wght@300&family=Quicksand:wght@600&family=Spline+Sans:wght@300&family=Syne+Tactile&family=Viga&display=swap"
+        rel="stylesheet">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="brand">
+                    <a href="#">Bookshelf Apps</a>
+                </li>
+                <li class="user">
+                    <a href="#" class="profile">
+                        <label for="user" class="user-label">Anonymous</label>
+                        <img src="assets/no-foto.png" alt="no-foto" width="28">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="message">
+            <div class="flash-message">
+                <!-- message -->
+            </div>
+        </section>
+        <section class="form-input">
+            <h2>Tambah Buku Baru</h2>
+            <form>
+                <ul>
+                    <li>
+                        <label for="judul">Judul</label>
+                        <input type="text" name="judul" placeholder="masukan judul" required>
+                    </li>
+                    <li>
+                        <label for="penulis">Penulis</label>
+                        <input type="text" name="penulis" placeholder="masukan penulis" required>
+                    </li>
+                    <li>
+                        <label for="tahun">Tahun terbit</label>
+                        <select name="tahun" id="tahun" required>
+                            <option>masukan tahun</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2004">2005</option>
+                            <option value="2004">2006</option>
+                            <option value="2004">2007</option>
+                            <option value="2004">2008</option>
+                            <option value="2004">2009</option>
+                            <option value="2004">2010</option>
+                            <option value="2004">2012</option>
+                            <option value="2004">2013</option>
+                            <option value="2004">2014</option>
+                            <option value="2004">2015</option>
+                            <option value="2004">2016</option>
+                            <option value="2004">2017</option>
+                            <option value="2004">2018</option>
+                        </select>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="selesai" id="selesai" value="selesai">
+                        <label for="selesai">Selesai dibaca</label>
+                    </li>
+                    <li>
+                        <button type="submit" name="tambah">Tambah</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <section class="form-input form-edit">
+            <h2>Ubah Data Buku</h2>
+            <form>
+                <div class="close">
+                    <img src="assets/x.svg" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <label for="judul">Judul</label>
+                        <input type="text" name="judul" class="judul" placeholder="masukan judul" required>
+                    </li>
+                    <li>
+                        <label for="penulis">Penulis</label>
+                        <input type="text" name="penulis" class="penulis" placeholder="masukan penulis" required>
+                    </li>
+                    <li>
+                        <label>Tahun terbit</label>
+                        <select name="tahun" id="tahunEdit" class="tahun" required>
+                            <!-- <option>masukan tahun</option> -->
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                        </select>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="selesai" id="selesaiEdit" value="selesai">
+                        <label for="selesaiEdit">Selesai dibaca</label>
+                    </li>
+                    <li>
+                        <button type="submit" name="tambah">Ubah</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <section class="list-item">
+            <header class="header">
+                <h2>Daftar Buku</h2>
+                <img src="assets/search.svg" alt="" class="img-search" width="20">
+                <form class="form-search">
+                    <input type="text" name="input-search" style="color: black;" placeholder="search..">
+                    <button type="submit"></button>
+                </form>
+            </header>
+            <aside id="uncompleted">
+                <header>
+                    <img src="assets/alert-circle.svg" alt="">
+                    <h3>Belum selesai dibaca</h3>
+                </header>
+                <div class="uncompleted">
+                    <!-- upcompleted -->
+                </div>
+            </aside>
+            <aside id="completed">
+                <header>
+                    <img src="assets/check-circle.svg" alt="">
+                    <h3>Selesai dibaca</h3>
+                </header>
+                <div class="completed">
+                    <!-- completed -->
+                </div>
+            </aside>
+        </section>
+        <section id="username">
+            <div class="form-inputUsername">
+                <div class="close btn-close">
+                    <img src="assets/x.svg" alt="">
+                </div>
+                <h4>Masukan nama anda!</h4>
+                <form>
+                    <input type="text" name="username" class="username" placeholder="masukan nama">
+                    <button type="submit">Simpan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-footer">
+            <p>Created by <a href="#">Pahrurozi</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

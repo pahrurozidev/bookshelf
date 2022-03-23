@@ -489,5 +489,9 @@ section#username {
 }
 /* username */
 
+.form-search input {
+  width: 11em !important;
+}
+
   /* end main */
 }
